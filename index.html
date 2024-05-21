@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Weather Forcasting</title>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Weather Forcasting</h2>
+        <form action="#" id="myForm">
+            <label for="keyInput">Days(0-100): </label>
+            <input type="number" name="keyInput" id="keyInput" min="0" max="100">
+            <!-- <label for="keyInputAdd">Add Entries:</label> -->
+            <!-- <input type="number" name="keyInputAdd" id="keyInputAdd" min="0" max="100"> -->
+        </form>
+        <div class="btn-container">
+            <button type="button" id="generateData">Generate Weather Forecast</button>
+            <button type="button" id="downloadCSV">Download Weather Report</button>
+        </div>
+
+        <!-- forcasting Table -->
+        <table id="data-table">
+            <thead>
+                <tr>
+                    <th class="heading">Serial No</th>
+                    <th class="heading">Temprature</th>
+                    <th class="heading">Pressure</th>
+                    <th class="heading">Humidity</th>
+                    <th class="heading">Precipitation</th>
+                    <th class="heading">Wind Speed</th>
+                    <th class="heading">Weather</th>
+                </tr>
+            </thead>
+            <!-- dynamic code to be injected -->
+            <tbody></tbody>
+        </table>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
